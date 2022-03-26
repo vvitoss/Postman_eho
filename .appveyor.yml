@@ -8,7 +8,8 @@ branches:
 
 build: off  # будем использовать свой скрипт сборки
 
-instal: -chmod +x gradlew
+
 
 build_script:
-  - ./gradlew test --info  # запускаем тест, флаг --info позволяет выводить больше информации
+  - chmod +x gradlew
+  - ./gradlew test --gitinfo  # запускаем тест, флаг --info позволяет выводить больше информации
